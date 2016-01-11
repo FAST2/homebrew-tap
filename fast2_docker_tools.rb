@@ -3,7 +3,7 @@ class Fast2DockerTools < Formula
   homepage "http://webdocker:8090/view/Base/job/installationspaket/"
   url "http://webdocker:8090/view/Base/job/installationspaket/lastSuccessfulBuild/artifact/docker-fast2install.tar.gz"
   version "0.9.2"
-  sha256 "0e85ed033d4fd7ddb8d6c80b3daa3e8aa3e11ec90eeac639282b6d1cbf749e03"
+  sha256 "55ed149ecc6fdc0627f3f55ce3e5f19983f1e26c6515773706fa90e92fc968be"
 
   def install
     bin.install Dir["*.sh"], Dir["templates"]
