@@ -2,8 +2,8 @@ class Fast2DockerTools < Formula
   desc "Installations och körpaket för att starta och köra docker containers"
   homepage "http://webdocker:8090/view/Base/job/installationspaket/"
   url "http://webdocker:8090/view/Base/job/installationspaket/lastSuccessfulBuild/artifact/docker-fast2install.tar.gz"
-  version "1.2.12"
-  sha256 "cb85f1ffb6c52fc02f6f8c21b5c0a52e50791f9a0921f156668d6ee8724d3078"
+  version "1.2.13"
+  sha256 "2c5b123839be765f2d7ddfcafd685c08103effa68e5b3cc5a42e0f24bb1e6841"
 
   def install
     bin.install Dir["*.sh"], Dir["templates"]
