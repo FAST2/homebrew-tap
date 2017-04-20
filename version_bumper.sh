@@ -1,5 +1,5 @@
 #!/bin/sh
-export SHA=`curl -s http://webdocker:8090/view/Base/job/installationspaket/lastSuccessfulBuild/artifact/docker-fast2install.tar.gz.sha256`
+export SHA=`curl -s http://webdocker:8090/view/Base/job/installationspaket-bin/lastSuccessfulBuild/artifact/docker-fast2install.tar.gz.sha256`
 
 # Bumpar minor versionen med 1, ie 1.2.1 -> 1.2.2  0.9 -> 0.10 etc
 export NEWVERSION=$(grep version fast2_docker_tools.rb | awk '{print $2}' | cut -f2 -d'"' | awk -F. '{$NF = $NF + 1;} 1' | sed 's/ /./g')
